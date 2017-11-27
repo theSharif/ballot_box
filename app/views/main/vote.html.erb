@@ -1,0 +1,9 @@
+<h1>Vote Here</h1>
+<p>Cast your vote for the following items</p>
+
+<% @ballots.each do |ballot| %>
+         
+            <%= ballot.name %>
+            <%= link_to 'I vote for this', process_vote_path(id: ballot.id) %>
+
+            <%end %>

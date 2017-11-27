@@ -1,4 +1,6 @@
 class MainController < ApplicationController
-  def index
+
+  def vote 
+  	@ballots = Ballot.all
   end
 end
